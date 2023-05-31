@@ -13,6 +13,12 @@
 		B3F142242A27080A00D2FB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F142222A27080A00D2FB72 /* Main.storyboard */; };
 		B3F142262A27080C00D2FB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F142252A27080C00D2FB72 /* Assets.xcassets */; };
 		B3F142292A27080C00D2FB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F142272A27080C00D2FB72 /* LaunchScreen.storyboard */; };
+		B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142312A2709DD00D2FB72 /* SnapKit */; };
+		B3F142352A2709F300D2FB72 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142342A2709F300D2FB72 /* RxCocoa */; };
+		B3F142372A2709F300D2FB72 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142362A2709F300D2FB72 /* RxSwift */; };
+		B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142392A270A0D00D2FB72 /* Then */; };
+		B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */; };
+		B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,8 @@
 		B3F142252A27080C00D2FB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3F142282A27080C00D2FB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3F1422A2A27080C00D2FB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherViewController.swift; sourceTree = "<group>"; };
+		B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F142372A2709F300D2FB72 /* RxSwift in Frameworks */,
+				B3F142352A2709F300D2FB72 /* RxCocoa in Frameworks */,
+				B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */,
+				B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 				B3F142252A27080C00D2FB72 /* Assets.xcassets */,
 				B3F142272A27080C00D2FB72 /* LaunchScreen.storyboard */,
 				B3F1422A2A27080C00D2FB72 /* Info.plist */,
+				B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */,
+				B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -83,6 +97,12 @@
 			dependencies = (
 			);
 			name = RxSwiftExample;
+			packageProductDependencies = (
+				B3F142312A2709DD00D2FB72 /* SnapKit */,
+				B3F142342A2709F300D2FB72 /* RxCocoa */,
+				B3F142362A2709F300D2FB72 /* RxSwift */,
+				B3F142392A270A0D00D2FB72 /* Then */,
+			);
 			productName = RxSwiftExample;
 			productReference = B3F142192A27080A00D2FB72 /* RxSwiftExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,11 @@
 				Base,
 			);
 			mainGroup = B3F142102A27080A00D2FB72;
+			packageReferences = (
+				B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = B3F1421A2A27080A00D2FB72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
+				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +385,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3F142312A2709DD00D2FB72 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B3F142342A2709F300D2FB72 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B3F142362A2709F300D2FB72 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B3F142392A270A0D00D2FB72 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3F142112A27080A00D2FB72 /* Project object */;
 }
