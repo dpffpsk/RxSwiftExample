@@ -19,6 +19,8 @@
 		B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142392A270A0D00D2FB72 /* Then */; };
 		B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */; };
 		B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */; };
+		B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142402A27200800D2FB72 /* CircleViewController.swift */; };
+		B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142442A272CB100D2FB72 /* CircleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		B3F1422A2A27080C00D2FB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherViewController.swift; sourceTree = "<group>"; };
 		B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherView.swift; sourceTree = "<group>"; };
+		B3F142402A27200800D2FB72 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		B3F142442A272CB100D2FB72 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				B3F1422A2A27080C00D2FB72 /* Info.plist */,
 				B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */,
 				B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */,
+				B3F142402A27200800D2FB72 /* CircleViewController.swift */,
+				B3F142442A272CB100D2FB72 /* CircleViewModel.swift */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 			files = (
 				B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
+				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
+				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
