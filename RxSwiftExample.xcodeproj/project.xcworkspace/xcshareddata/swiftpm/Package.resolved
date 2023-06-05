@@ -1,6 +1,60 @@
 {
   "pins" : [
     {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "bc268c28fb170f494de9e9927c371b8342979ece",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "mapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lyft/mapper.git",
+      "state" : {
+        "revision" : "c8f848c8a496e8dbfafa4fba5bb44723bacbe853",
+        "version" : "10.0.1"
+      }
+    },
+    {
+      "identity" : "moya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moya/Moya.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "963654cd4f82d17d7546b9d6127c29f6df091717"
+      }
+    },
+    {
+      "identity" : "moya-modelmapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sunshinejr/Moya-ModelMapper.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "3f0b7d953bedd2c61570bec7110fb30b720f028b"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+        "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "rxoptional",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxOptional",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d4f68f6c5ca80efacdc7a562181d9d040ad519c7"
+      }
+    },
+    {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",

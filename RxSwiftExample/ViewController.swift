@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let menuList = ["CitySearcher", "CircleView", "next"]
+    let menuList = ["CitySearcher", "CircleView", "IssueListView"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,9 +45,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let circleVC = CircleViewController()
             self.navigationController?.pushViewController(circleVC, animated: true)
         default:
-            print("")
+            print("index 2")
+            let issueListVC = IssueListViewController()
+            self.navigationController?.pushViewController(issueListVC, animated: true)
         }
     }
-    
 }
-
