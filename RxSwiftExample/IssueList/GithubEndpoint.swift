@@ -17,6 +17,26 @@ enum GitHub {
 
 // TargetType : url, method, task(request/upload/download), parameter, parameter encoding을 가지고 있는 protocol
 extension GitHub: TargetType {
+    var baseURL: URL {
+        <#code#>
+    }
+    
+    var path: String {
+        <#code#>
+    }
+    
+    var method: Moya.Method {
+        <#code#>
+    }
+    
+    var task: Moya.Task {
+        <#code#>
+    }
+    
+    var headers: [String : String]? {
+        <#code#>
+    }
+    
 
 
 //    var method: Moya.Method {
