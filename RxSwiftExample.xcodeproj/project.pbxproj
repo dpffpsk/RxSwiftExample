@@ -13,6 +13,11 @@
 		B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C042A285A3600515C45 /* IssueListView.swift */; };
 		B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C062A28600F00515C45 /* GithubEndpoint.swift */; };
 		B3D83C0A2A28643300515C45 /* Moya-ModelMapper in Frameworks */ = {isa = PBXBuildFile; productRef = B3D83C092A28643300515C45 /* Moya-ModelMapper */; };
+		B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEC7882A315F0000B6D8B7 /* IssueEntity.swift */; };
+		B3DEC78B2A315F1A00B6D8B7 /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEC78A2A315F1A00B6D8B7 /* RepositoryEntity.swift */; };
+		B3DEC78D2A316CAE00B6D8B7 /* IssueTrackerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DEC78C2A316CAE00B6D8B7 /* IssueTrackerModel.swift */; };
+		B3DEC7902A3192EA00B6D8B7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B3DEC78F2A3192EA00B6D8B7 /* RxCocoa */; };
+		B3DEC7922A3192EA00B6D8B7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3DEC7912A3192EA00B6D8B7 /* RxSwift */; };
 		B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1421C2A27080A00D2FB72 /* AppDelegate.swift */; };
 		B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1421E2A27080A00D2FB72 /* SceneDelegate.swift */; };
 		B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142202A27080A00D2FB72 /* ViewController.swift */; };
@@ -20,8 +25,6 @@
 		B3F142262A27080C00D2FB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F142252A27080C00D2FB72 /* Assets.xcassets */; };
 		B3F142292A27080C00D2FB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F142272A27080C00D2FB72 /* LaunchScreen.storyboard */; };
 		B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142312A2709DD00D2FB72 /* SnapKit */; };
-		B3F142352A2709F300D2FB72 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142342A2709F300D2FB72 /* RxCocoa */; };
-		B3F142372A2709F300D2FB72 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142362A2709F300D2FB72 /* RxSwift */; };
 		B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = B3F142392A270A0D00D2FB72 /* Then */; };
 		B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423B2A270D6A00D2FB72 /* CitySearcherViewController.swift */; };
 		B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */; };
@@ -33,6 +36,9 @@
 		B3D83C022A28598900515C45 /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		B3D83C042A285A3600515C45 /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
 		B3D83C062A28600F00515C45 /* GithubEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
+		B3DEC7882A315F0000B6D8B7 /* IssueEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueEntity.swift; sourceTree = "<group>"; };
+		B3DEC78A2A315F1A00B6D8B7 /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
+		B3DEC78C2A316CAE00B6D8B7 /* IssueTrackerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTrackerModel.swift; sourceTree = "<group>"; };
 		B3F142192A27080A00D2FB72 /* RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F1421C2A27080A00D2FB72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3F1421E2A27080A00D2FB72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,13 +58,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3F142372A2709F300D2FB72 /* RxSwift in Frameworks */,
+				B3DEC7902A3192EA00B6D8B7 /* RxCocoa in Frameworks */,
 				B3D83C0A2A28643300515C45 /* Moya-ModelMapper in Frameworks */,
-				B3F142352A2709F300D2FB72 /* RxCocoa in Frameworks */,
 				B3D83BFD2A2858CB00515C45 /* RxOptional in Frameworks */,
 				B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */,
 				B3D83BFA2A28586300515C45 /* Moya in Frameworks */,
 				B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */,
+				B3DEC7922A3192EA00B6D8B7 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +77,9 @@
 				B3D83C022A28598900515C45 /* IssueListViewController.swift */,
 				B3D83C042A285A3600515C45 /* IssueListView.swift */,
 				B3D83C062A28600F00515C45 /* GithubEndpoint.swift */,
+				B3DEC7882A315F0000B6D8B7 /* IssueEntity.swift */,
+				B3DEC78A2A315F1A00B6D8B7 /* RepositoryEntity.swift */,
+				B3DEC78C2A316CAE00B6D8B7 /* IssueTrackerModel.swift */,
 			);
 			path = IssueList;
 			sourceTree = "<group>";
@@ -144,12 +153,12 @@
 			name = RxSwiftExample;
 			packageProductDependencies = (
 				B3F142312A2709DD00D2FB72 /* SnapKit */,
-				B3F142342A2709F300D2FB72 /* RxCocoa */,
-				B3F142362A2709F300D2FB72 /* RxSwift */,
 				B3F142392A270A0D00D2FB72 /* Then */,
 				B3D83BF92A28586300515C45 /* Moya */,
 				B3D83BFC2A2858CB00515C45 /* RxOptional */,
 				B3D83C092A28643300515C45 /* Moya-ModelMapper */,
+				B3DEC78F2A3192EA00B6D8B7 /* RxCocoa */,
+				B3DEC7912A3192EA00B6D8B7 /* RxSwift */,
 			);
 			productName = RxSwiftExample;
 			productReference = B3F142192A27080A00D2FB72 /* RxSwiftExample.app */;
@@ -181,11 +190,11 @@
 			mainGroup = B3F142102A27080A00D2FB72;
 			packageReferences = (
 				B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */,
 				B3D83BF82A28586300515C45 /* XCRemoteSwiftPackageReference "Moya" */,
 				B3D83BFB2A2858CB00515C45 /* XCRemoteSwiftPackageReference "RxOptional" */,
 				B3D83C082A28643300515C45 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */,
+				B3DEC78E2A3192EA00B6D8B7 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = B3F1421A2A27080A00D2FB72 /* Products */;
 			projectDirPath = "";
@@ -216,14 +225,17 @@
 			files = (
 				B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */,
 				B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */,
+				B3DEC78B2A315F1A00B6D8B7 /* RepositoryEntity.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
 				B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
+				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
+				B3DEC78D2A316CAE00B6D8B7 /* IssueTrackerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,20 +479,20 @@
 				kind = branch;
 			};
 		};
+		B3DEC78E2A3192EA00B6D8B7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
-			};
-		};
-		B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
 			};
 		};
 		B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */ = {
@@ -509,20 +521,20 @@
 			package = B3D83C082A28643300515C45 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */;
 			productName = "Moya-ModelMapper";
 		};
+		B3DEC78F2A3192EA00B6D8B7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3DEC78E2A3192EA00B6D8B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B3DEC7912A3192EA00B6D8B7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3DEC78E2A3192EA00B6D8B7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		B3F142312A2709DD00D2FB72 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		B3F142342A2709F300D2FB72 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		B3F142362A2709F300D2FB72 /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B3F142332A2709F300D2FB72 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
 		};
 		B3F142392A270A0D00D2FB72 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
