@@ -11,13 +11,22 @@ import Then
 
 class LoginView: UIView {
 
-    lazy var idTextField = UITextField(frame: .zero)
-    lazy var passwordTextField = UITextField(frame: .zero)
-    lazy var colorBoxView1 = UIView().then {
-        $0.backgroundColor = .blue
+    lazy var idTextField = UITextField().then {
+        $0.layer.borderColor = UIColor.gray.cgColor
+        $0.layer.borderWidth = 0.7
     }
+    
+    lazy var passwordTextField = UITextField().then {
+        $0.layer.borderColor = UIColor.gray.cgColor
+        $0.layer.borderWidth = 0.7
+    }
+    
+    lazy var colorBoxView1 = UIView().then {
+        $0.backgroundColor = .systemBlue
+    }
+    
     lazy var colorBoxView2 = UIView().then {
-        $0.backgroundColor = .blue
+        $0.backgroundColor = .systemBlue
     }
     
     lazy var landscapeStackView1 = UIStackView().then {
@@ -40,9 +49,10 @@ class LoginView: UIView {
         $0.distribution = .fillEqually
     }
     
-
     lazy var loginButton = UIButton().then {
         $0.setTitle("로그인", for: .normal)
+        $0.setTitleColor(.white, for: .normal)
+        $0.backgroundColor = .systemYellow
     }
 
     override init(frame: CGRect) {
@@ -59,17 +69,17 @@ class LoginView: UIView {
     func setupLayout() {
         backgroundColor = .white
         
-        addSubview(portraitStackView)
-        addSubview(loginButton)
-
-        portraitStackView.addArrangedSubview(landscapeStackView1)
-        portraitStackView.addArrangedSubview(landscapeStackView2)
-        
         landscapeStackView1.addArrangedSubview(idTextField)
         landscapeStackView1.addArrangedSubview(colorBoxView1)
         
         landscapeStackView2.addArrangedSubview(passwordTextField)
         landscapeStackView2.addArrangedSubview(colorBoxView2)
+        
+        portraitStackView.addArrangedSubview(landscapeStackView1)
+        portraitStackView.addArrangedSubview(landscapeStackView2)
+        
+        addSubview(portraitStackView)
+        addSubview(loginButton)
     }
     
     func setupConstraints() {
@@ -120,7 +130,7 @@ class LoginView: UIView {
             $0.top.equalTo(portraitStackView.snp.bottom).offset(30)
             $0.leading.equalTo(self.safeAreaLayoutGuide).offset(50)
             $0.trailing.equalTo(self.safeAreaLayoutGuide).offset(-50)
-            $0.bottom.equalTo(self.safeAreaLayoutGuide).offset(500)
+            $0.bottom.equalTo(self.safeAreaLayoutGuide).offset(-500)
             $0.height.equalTo(35)
         }
     }
