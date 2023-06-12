@@ -14,11 +14,17 @@ class LoginView: UIView {
     lazy var idTextField = UITextField().then {
         $0.layer.borderColor = UIColor.gray.cgColor
         $0.layer.borderWidth = 0.7
+        $0.placeholder = "E-Mail"
+        $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 16.0, height: 0.0))
+        $0.leftViewMode = .always
     }
     
     lazy var passwordTextField = UITextField().then {
         $0.layer.borderColor = UIColor.gray.cgColor
         $0.layer.borderWidth = 0.7
+        $0.placeholder = "Password"
+        $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 16.0, height: 0.0))
+        $0.leftViewMode = .always
     }
     
     lazy var colorBoxView1 = UIView().then {
@@ -50,7 +56,7 @@ class LoginView: UIView {
     }
     
     lazy var loginButton = UIButton().then {
-        $0.setTitle("로그인", for: .normal)
+        $0.setTitle("Login", for: .normal)
         $0.setTitleColor(.white, for: .normal)
         $0.backgroundColor = .systemYellow
     }
