@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 class LoginViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class LoginViewController: UIViewController {
         
         setupLayout()
         setupConstraints()
+        setupBinding()
     }
     
     func setupLayout() {
@@ -27,5 +29,12 @@ class LoginViewController: UIViewController {
         loginView.snp.makeConstraints {
             $0.top.leading.trailing.bottom.equalToSuperview()
         }
+    }
+    
+    func setupBinding() {
+        loginView.idTextField.rx.text
+//            .subscribe(onNext: {s in
+//                print(s)
+//            })
     }
 }
