@@ -33,8 +33,8 @@ class LoginViewController: UIViewController {
     
     func setupBinding() {
         loginView.idTextField.rx.text
-//            .subscribe(onNext: {s in
-//                print(s)
-//            })
+            .subscribe(onNext: { s in
+                print(s)
+            })
     }
 }
