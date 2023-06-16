@@ -91,9 +91,9 @@ class LoginView: UIView {
     func setupConstraints() {
         // horizontal stackview1
         idTextField.snp.makeConstraints {
-            $0.top.equalTo(landscapeStackView1.snp.top).offset(10)
+            $0.top.equalTo(landscapeStackView1.snp.top).offset(3)
             $0.leading.equalTo(landscapeStackView1.snp.leading)
-            $0.bottom.equalTo(landscapeStackView1.snp.bottom).offset(10)
+            $0.bottom.equalTo(landscapeStackView1.snp.bottom).offset(-3)
         }
         
         colorBoxView1.snp.makeConstraints {
@@ -109,9 +109,9 @@ class LoginView: UIView {
         
         // horizontal stackview2
         passwordTextField.snp.makeConstraints {
-            $0.top.equalTo(landscapeStackView2.snp.top).offset(10)
+            $0.top.equalTo(landscapeStackView2.snp.top).offset(3)
             $0.leading.equalTo(landscapeStackView2.snp.leading)
-            $0.bottom.equalTo(landscapeStackView2.snp.bottom).offset(10)
+            $0.bottom.equalTo(landscapeStackView2.snp.bottom).offset(-3)
         }
         
         colorBoxView2.snp.makeConstraints {
