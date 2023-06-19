@@ -25,6 +25,7 @@ class IssueListView: UIView {
     }
     
     func setupLayout() {
+        searchBar.placeholder = "미완성 기능"
         addSubview(searchBar)
         addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "IssueListCell")

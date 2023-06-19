@@ -47,7 +47,7 @@ class LoginView: UIView {
         $0.spacing = 20
         $0.distribution = .fill
         $0.alignment = .center
-    }
+    }   
     
     lazy var portraitStackView = UIStackView().then {
         $0.axis = .vertical
