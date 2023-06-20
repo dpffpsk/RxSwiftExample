@@ -35,6 +35,9 @@
 		B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */; };
 		B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142402A27200800D2FB72 /* CircleViewController.swift */; };
 		B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142442A272CB100D2FB72 /* CircleViewModel.swift */; };
+		B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */; };
+		B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */; };
+		B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherView.swift; sourceTree = "<group>"; };
 		B3F142402A27200800D2FB72 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		B3F142442A272CB100D2FB72 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewController.swift; sourceTree = "<group>"; };
+		B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginView.swift; sourceTree = "<group>"; };
+		B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +167,19 @@
 				B3D83BFE2A28590100515C45 /* IssueList */,
 				B3DEC7932A31B7E500B6D8B7 /* Login */,
 				B36948132A3FEA8900DB1BAB /* MyTable */,
+				B3FB7AED2A41637F007B68AC /* SimpleLogin */,
 			);
 			path = RxSwiftExample;
+			sourceTree = "<group>";
+		};
+		B3FB7AED2A41637F007B68AC /* SimpleLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */,
+				B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */,
+				B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */,
+			);
+			path = SimpleLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,12 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */,
 				B3DEC7952A31B82100B6D8B7 /* LoginViewController.swift in Sources */,
 				B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */,
 				B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */,
 				B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */,
 				B3DEC7972A31B86200B6D8B7 /* LoginView.swift in Sources */,
+				B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */,
 				B3DEC78B2A315F1A00B6D8B7 /* RepositoryEntity.swift in Sources */,
+				B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
 				B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
