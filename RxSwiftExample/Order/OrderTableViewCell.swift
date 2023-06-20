@@ -24,18 +24,28 @@ class OrderTableViewCell: UITableViewCell {
         $0.textColor = .black
         $0.numberOfLines = 0
         $0.font = UIFont.boldSystemFont(ofSize: 20)
+        $0.setContentHuggingPriority(.init(rawValue: 250), for: .horizontal)
     }
     
     lazy var priceLabel = UILabel().then {
         $0.textColor = .black
         $0.numberOfLines = 0
         $0.font = UIFont.boldSystemFont(ofSize: 20)
+        $0.setContentCompressionResistancePriority(.init(rawValue: 749), for: .horizontal)
+    }
+    
+    lazy var landscapeStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.spacing = 10
+        $0.distribution = .fill
+        $0.alignment = .fill
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
+        setupLayout()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -43,11 +53,36 @@ class OrderTableViewCell: UITableViewCell {
     }
     
     private func setupLayout() {
-        
+        contentView.addSubview(landscapeStackView)
+
+        landscapeStackView.addArrangedSubview(plusButton)
+        landscapeStackView.addArrangedSubview(minusButton)
+        landscapeStackView.addArrangedSubview(menuNameLabel)
+        landscapeStackView.addArrangedSubview(priceLabel)
     }
     
     private func setupConstraints() {
+        landscapeStackView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview().inset(5)
+            $0.leading.trailing.equalToSuperview().inset(10)
+        }
         
+        plusButton.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(30)
+        }
+        
+        minusButton.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(30)
+        }
+        
+        menuNameLabel.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+        }
+        
+        priceLabel.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+        }
     }
-    
 }

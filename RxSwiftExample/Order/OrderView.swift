@@ -47,19 +47,21 @@ class OrderView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupLayout() {
+    private func setupLayout() {
         backgroundColor = .white
         
         addSubview(titleLabel)
         addSubview(menuTableView)
-        menuTableView.register(UITableViewCell.self, forCellReuseIdentifier: "CitySearcherCell")
+        menuTableView.register(OrderTableViewCell.self, forCellReuseIdentifier: OrderTableViewCell.identifier)
         addSubview(totalLabel)
         addSubview(orderButton)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         titleLabel.snp.makeConstraints {
-            $0.top.leading.equalToSuperview().inset(20)
+            $0.top.equalToSuperview()
+            $0.leading.equalToSuperview().inset(20)
+            $0.height.equalTo(70)
         }
         
         menuTableView.snp.makeConstraints {
@@ -70,13 +72,13 @@ class OrderView: UIView {
         totalLabel.snp.makeConstraints {
             $0.top.equalTo(menuTableView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(100)
+            $0.height.equalTo(120)
         }
         
         orderButton.snp.makeConstraints {
             $0.top.equalTo(totalLabel.snp.bottom)
             $0.leading.trailing.bottom.equalToSuperview()
-            $0.height.equalTo(80)
+            $0.height.equalTo(100)
         }
     }
 }
