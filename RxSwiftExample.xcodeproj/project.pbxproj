@@ -38,6 +38,9 @@
 		B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */; };
 		B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */; };
 		B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */; };
+		B3FB7AF62A416D51007B68AC /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF52A416D51007B68AC /* OrderViewController.swift */; };
+		B3FB7AF82A416DEF007B68AC /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF72A416DEF007B68AC /* OrderView.swift */; };
+		B3FB7AFA2A41875E007B68AC /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF92A41875E007B68AC /* OrderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewController.swift; sourceTree = "<group>"; };
 		B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginView.swift; sourceTree = "<group>"; };
 		B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewModel.swift; sourceTree = "<group>"; };
+		B3FB7AF52A416D51007B68AC /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		B3FB7AF72A416DEF007B68AC /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		B3FB7AF92A41875E007B68AC /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 				B3DEC7932A31B7E500B6D8B7 /* Login */,
 				B36948132A3FEA8900DB1BAB /* MyTable */,
 				B3FB7AED2A41637F007B68AC /* SimpleLogin */,
+				B3FB7AF42A416CFC007B68AC /* Order */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -180,6 +187,16 @@
 				B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */,
 			);
 			path = SimpleLogin;
+			sourceTree = "<group>";
+		};
+		B3FB7AF42A416CFC007B68AC /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				B3FB7AF52A416D51007B68AC /* OrderViewController.swift */,
+				B3FB7AF72A416DEF007B68AC /* OrderView.swift */,
+				B3FB7AF92A41875E007B68AC /* OrderTableViewCell.swift */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +296,7 @@
 				B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */,
 				B3DEC7972A31B86200B6D8B7 /* LoginView.swift in Sources */,
 				B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */,
+				B3FB7AFA2A41875E007B68AC /* OrderTableViewCell.swift in Sources */,
 				B3DEC78B2A315F1A00B6D8B7 /* RepositoryEntity.swift in Sources */,
 				B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
@@ -289,7 +307,9 @@
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
+				B3FB7AF62A416D51007B68AC /* OrderViewController.swift in Sources */,
 				B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */,
+				B3FB7AF82A416DEF007B68AC /* OrderView.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
 				B3DEC78D2A316CAE00B6D8B7 /* IssueTrackerModel.swift in Sources */,
 			);
