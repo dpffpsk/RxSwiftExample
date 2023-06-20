@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     let loginView = LoginView()
     let disposeBag = DisposeBag()
     
-    // BehaviorSubject : 최근 값을 저장해준다, 초기값 설정 가능
+    // BehaviorSubject : Subject로 전달되는 새로운 이벤트를 구독자로 전달한다. 다른 Subject와 다른 점은 생성시점에 초기값을 구현하고 구독시 최신 이벤트를 저장해두었다가 전달하는 것이다. 구독자에게 completed가 전달되고 더 이상 추가적인 이벤트를 전달하지 않는다.
     let idText: BehaviorSubject<String> = BehaviorSubject(value: "")
     let passwordText: BehaviorSubject<String> = BehaviorSubject(value: "")
     

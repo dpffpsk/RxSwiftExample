@@ -23,7 +23,7 @@ class MyTableViewController: UIViewController {
     
     // Table DataSource
     var dataSource: RxTableViewSectionedReloadDataSource<MyTable>!
-    // UI이벤트를 사용하는 경우, Relay가 적합
+    // Relay : Subject와 다르게 Next 이벤트만 받는다(completed와 error 받지 X). 그래서 Subject와 달리 종료되지 않는다. 구독자가 dispose되기까지 계속 이벤트를 처리한다.(= 주로 종료없이 지속되는 UI 이벤트를 처리하는데 사용) 이벤트를 전달하기 위해서는 onNext()가 아니라 accept 메소드를 사용한다.
     var relay: BehaviorRelay<[MyTable]> = BehaviorRelay(value: [])
     
     override func viewDidLoad() {
