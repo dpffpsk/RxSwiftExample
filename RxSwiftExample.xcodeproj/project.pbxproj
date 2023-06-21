@@ -15,6 +15,7 @@
 		B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B36948152A3FEC2500DB1BAB /* RxDataSources */; };
 		B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */; };
 		B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948192A3FECA000DB1BAB /* MyTable.swift */; };
+		B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */; };
 		B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C022A28598900515C45 /* IssueListViewController.swift */; };
 		B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C042A285A3600515C45 /* IssueListView.swift */; };
 		B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C062A28600F00515C45 /* GithubEndpoint.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		B36948192A3FECA000DB1BAB /* MyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTable.swift; sourceTree = "<group>"; };
+		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		B3D83C022A28598900515C45 /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		B3D83C042A285A3600515C45 /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
 		B3D83C062A28600F00515C45 /* GithubEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				B3FB7AF52A416D51007B68AC /* OrderViewController.swift */,
 				B3FB7AF72A416DEF007B68AC /* OrderView.swift */,
 				B3FB7AF92A41875E007B68AC /* OrderTableViewCell.swift */,
+				B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				B3FB7AF82A416DEF007B68AC /* OrderView.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
 				B3DEC78D2A316CAE00B6D8B7 /* IssueTrackerModel.swift in Sources */,
+				B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +470,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +499,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,6 +10,7 @@ import UIKit
 class OrderViewController: UIViewController {
 
     let orderView = OrderView()
+    let viewModel = MenuListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
