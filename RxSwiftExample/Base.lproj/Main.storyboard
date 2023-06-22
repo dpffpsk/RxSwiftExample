@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -111,13 +112,16 @@
                                                                 <constraint firstAttribute="width" constant="30" id="vQW-Bo-hpb"/>
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                            <buttonConfiguration key="configuration" style="plain">
+                                                                <imageReference key="image" image="plus" catalog="system" symbolScale="default"/>
+                                                            </buttonConfiguration>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-rT-Btw">
                                                             <rect key="frame" x="40" y="0.0" width="30" height="32"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="30" id="lNq-qr-GLd"/>
                                                             </constraints>
+                                                            <color key="tintColor" red="0.5" green="0.4548652574" blue="0.83344284800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="minus" catalog="system"/>
                                                         </button>

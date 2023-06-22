@@ -20,7 +20,9 @@ class OrderView: UIView {
         $0.font = UIFont.boldSystemFont(ofSize: 30)
     }
     
-    lazy var menuTableView = UITableView(frame: .zero, style: .plain)
+    lazy var menuTableView = UITableView().then {
+        $0.separatorInset.right = 10
+    }
     
     lazy var totalLabel = UILabel().then {
         $0.textColor = .black
