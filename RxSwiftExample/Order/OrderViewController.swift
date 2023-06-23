@@ -14,11 +14,8 @@ class OrderViewController: UIViewController {
     let orderView = OrderView()
     let viewModel = MenuListViewModel()
     let disposeBag = DisposeBag()
-    
-    
     let menuModel = Observable.of(MenuListViewModel().menu.map{ $0 })
-    
-//    let test = Observable.of(menu.map { $0 })
+    var totalPrice = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,16 +39,22 @@ class OrderViewController: UIViewController {
     }
     
     private func setupBinding() {
+        
         menuModel.bind(to: orderView.menuTableView.rx.items(cellIdentifier: OrderTableViewCell.identifier, cellType: OrderTableViewCell.self)) { index, element, cell in
-            print("===========\(index)")
-            print("===========\(element)")
-            print("===========\(cell)")
             
             cell.menuNameLabel.text = self.viewModel.menu[index].name
             cell.priceLabel.text = String(self.viewModel.menu[index].prcie)
         }
         .disposed(by: disposeBag)
+        
+        orderView.menuTableView.rx
+            .itemSelected
+            .withUnretained(self)
+            .subscribe(onNext: { owner, indexPath in
+                // 선택셀 해제
+                owner.orderView.menuTableView.deselectRow(at: indexPath, animated: true)
+            }).disposed(by: disposeBag)
     }
-    
+
     
 }

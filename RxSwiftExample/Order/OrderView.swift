@@ -25,6 +25,8 @@ class OrderView: UIView {
     }
     
     lazy var totalLabel = UILabel().then {
+        $0.text = "0"
+        $0.textAlignment = .right
         $0.textColor = .black
         $0.numberOfLines = 0
         $0.font = UIFont.boldSystemFont(ofSize: 40)
