@@ -16,9 +16,12 @@ class OrderViewController: UIViewController {
     let disposeBag = DisposeBag()
     let menuModel = Observable.of(MenuListViewModel().menu.map{ $0 })
     var totalPrice = 0
+    var tempMenu: [Menu]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tempMenu = viewModel.menu
         
         setupBinding()
         setupLayout()
@@ -39,7 +42,6 @@ class OrderViewController: UIViewController {
     }
     
     private func setupBinding() {
-
         // 테이블뷰 셀 정의
         menuModel.bind(to: orderView.menuTableView.rx.items(cellIdentifier: OrderTableViewCell.identifier, cellType: OrderTableViewCell.self)) { index, element, cell in
             
@@ -49,8 +51,9 @@ class OrderViewController: UIViewController {
             
             cell.menuNameLabel.text = self.viewModel.menu[index].name
             cell.priceLabel.text = String(self.viewModel.menu[index].prcie)
+            cell.amountLabel.text = String(self.viewModel.menu[index].count)
             
-            self.tappedButton(menu: element, cell: cell)
+            self.tappedButton(index: index, menu: element, cell: cell)
         }
         .disposed(by: disposeBag)
         
@@ -61,17 +64,27 @@ class OrderViewController: UIViewController {
             .subscribe(onNext: { owner, indexPath in
                 // 선택셀 해제
                 owner.orderView.menuTableView.deselectRow(at: indexPath, animated: true)
-            }).disposed(by: disposeBag)
+            })
+            .disposed(by: disposeBag)
         
         // ORDER 버튼
+        orderView.orderButton.rx
+            .tap
+            .bind { _ in
+                print("주문완료!")
+            }
+            .disposed(by: disposeBag)
     }
     
-    private func tappedButton(menu: Menu, cell: OrderTableViewCell) {
+    private func tappedButton(index: Int, menu: Menu, cell: OrderTableViewCell) {
         cell.plusButton.rx
             .tap
             .bind(onNext: { _ in
                 self.totalPrice += menu.prcie
                 self.orderView.totalLabel.text = self.numberFormatter(number: self.totalPrice)
+                
+                self.tempMenu[index].count += 1
+                cell.amountLabel.text = String(self.tempMenu[index].count)
             })
             .disposed(by: disposeBag)
         
@@ -79,9 +92,17 @@ class OrderViewController: UIViewController {
             .tap
             .bind(onNext: { _ in
                 self.totalPrice -= menu.prcie
+                self.tempMenu[index].count -= 1
+                
                 if self.totalPrice < 0 {
                     self.totalPrice = 0
                 }
+                
+                if self.tempMenu[index].count < 0 {
+                    self.tempMenu[index].count = 0
+                }
+                
+                cell.amountLabel.text = String(self.tempMenu[index].count)
                 self.orderView.totalLabel.text = self.numberFormatter(number: self.totalPrice)
             })
             .disposed(by: disposeBag)

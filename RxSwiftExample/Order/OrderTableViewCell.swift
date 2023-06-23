@@ -31,18 +31,48 @@ class OrderTableViewCell: UITableViewCell {
         $0.setContentHuggingPriority(.init(rawValue: 250), for: .horizontal)
     }
     
+    lazy var leftBracket = UILabel().then {
+        $0.text = "수량("
+        $0.textColor = .systemGray
+        $0.numberOfLines = 0
+        $0.font = UIFont.systemFont(ofSize: 10)
+        $0.textAlignment = .right
+    }
+    
+    lazy var amountLabel = UILabel().then {
+        $0.text = "0"
+        $0.textColor = .systemGray
+        $0.numberOfLines = 0
+        $0.font = UIFont.systemFont(ofSize: 10)
+        $0.textAlignment = .center
+    }
+    
+    lazy var rightBracket = UILabel().then {
+        $0.text = ")"
+        $0.textColor = .systemGray
+        $0.numberOfLines = 0
+        $0.font = UIFont.systemFont(ofSize: 10)
+        $0.textAlignment = .left
+    }
+    
     lazy var priceLabel = UILabel().then {
         $0.textColor = .black
         $0.numberOfLines = 0
 //        $0.font = UIFont.boldSystemFont(ofSize: 20)
         $0.font = UIFont.systemFont(ofSize: 15)
         $0.textAlignment = .right
-        $0.setContentCompressionResistancePriority(.init(rawValue: 749), for: .horizontal)
+    }
+    
+    lazy var bracketStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.spacing = 0
+        $0.distribution = .fill
+        $0.alignment = .fill
     }
     
     lazy var landscapeStackView = UIStackView().then {
         $0.axis = .horizontal
-        $0.spacing = 15
+        $0.spacing = 5
         $0.distribution = .fill
         $0.alignment = .fill
     }
@@ -74,6 +104,12 @@ class OrderTableViewCell: UITableViewCell {
         landscapeStackView.addArrangedSubview(plusButton)
         landscapeStackView.addArrangedSubview(minusButton)
         landscapeStackView.addArrangedSubview(menuNameLabel)
+        
+        landscapeStackView.addArrangedSubview(bracketStackView)
+        bracketStackView.addArrangedSubview(leftBracket)
+        bracketStackView.addArrangedSubview(amountLabel)
+        bracketStackView.addArrangedSubview(rightBracket)
+        
         landscapeStackView.addArrangedSubview(priceLabel)
     }
     
@@ -97,8 +133,28 @@ class OrderTableViewCell: UITableViewCell {
             $0.top.bottom.equalToSuperview()
         }
         
+        bracketStackView.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(50)
+        }
+        
+        leftBracket.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(23)
+        }
+        
+        amountLabel.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+        }
+        
+        rightBracket.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(5)
+        }
+        
         priceLabel.snp.makeConstraints {
             $0.top.bottom.equalToSuperview()
+            $0.width.equalTo(40)
         }
     }
 }
