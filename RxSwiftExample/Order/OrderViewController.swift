@@ -9,6 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+// TODO: Rx를 더 공부해서 적용해보자
 class OrderViewController: UIViewController {
 
     let orderView = OrderView()
@@ -91,15 +92,16 @@ class OrderViewController: UIViewController {
         cell.minusButton.rx
             .tap
             .bind(onNext: { _ in
-                self.totalPrice -= menu.prcie
                 self.tempMenu[index].count -= 1
-                
-                if self.totalPrice < 0 {
-                    self.totalPrice = 0
-                }
-                
+
                 if self.tempMenu[index].count < 0 {
                     self.tempMenu[index].count = 0
+                } else {
+                    self.totalPrice -= menu.prcie
+
+                    if self.totalPrice < 0 {
+                        self.totalPrice = 0
+                    }
                 }
                 
                 cell.amountLabel.text = String(self.tempMenu[index].count)
