@@ -12,6 +12,9 @@
 		B30FBC972A32B525004A3495 /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBC962A32B525004A3495 /* RxOptional */; };
 		B30FBCAE2A32BDAD004A3495 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBCAD2A32BDAD004A3495 /* Moya */; };
 		B30FBCB12A32BDB9004A3495 /* Moya-ModelMapper in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBCB02A32BDB9004A3495 /* Moya-ModelMapper */; };
+		B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */; };
+		B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11382A4A9E1D002D5258 /* GithubTableViewCell.swift */; };
+		B33A113B2A4AA29F002D5258 /* GitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A113A2A4AA29F002D5258 /* GitRepository.swift */; };
 		B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B36948152A3FEC2500DB1BAB /* RxDataSources */; };
 		B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */; };
 		B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948192A3FECA000DB1BAB /* MyTable.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTableViewController.swift; sourceTree = "<group>"; };
+		B33A11382A4A9E1D002D5258 /* GithubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTableViewCell.swift; sourceTree = "<group>"; };
+		B33A113A2A4AA29F002D5258 /* GitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepository.swift; sourceTree = "<group>"; };
 		B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		B36948192A3FECA000DB1BAB /* MyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTable.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B33A11352A49644E002D5258 /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */,
+				B33A11382A4A9E1D002D5258 /* GithubTableViewCell.swift */,
+				B33A113A2A4AA29F002D5258 /* GitRepository.swift */,
+			);
+			path = Github;
+			sourceTree = "<group>";
+		};
 		B36948132A3FEA8900DB1BAB /* MyTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +193,7 @@
 				B36948132A3FEA8900DB1BAB /* MyTable */,
 				B3FB7AED2A41637F007B68AC /* SimpleLogin */,
 				B3FB7AF42A416CFC007B68AC /* Order */,
+				B33A11352A49644E002D5258 /* Github */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -292,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */,
 				B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */,
 				B3DEC7952A31B82100B6D8B7 /* LoginViewController.swift in Sources */,
 				B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */,
@@ -305,6 +323,7 @@
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
 				B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
+				B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
@@ -316,6 +335,7 @@
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
 				B3DEC78D2A316CAE00B6D8B7 /* IssueTrackerModel.swift in Sources */,
 				B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */,
+				B33A113B2A4AA29F002D5258 /* GitRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
