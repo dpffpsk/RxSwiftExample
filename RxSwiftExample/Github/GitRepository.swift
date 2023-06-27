@@ -10,8 +10,7 @@ import Foundation
 // Codable : Encodable, Decodable이 합쳐진 것
 // Encodable : data를 Encoder에서 변환해주려는 프로토콜로 바꿔주는 것
 // Decodable : data를 원하는 모델로 Decode 해주는 것
-
-struct GitRepository: Codable {
+struct GitRepository: Decodable {
     let id: Int
     let name: String
     let description: String
