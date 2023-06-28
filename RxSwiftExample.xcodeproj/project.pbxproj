@@ -15,6 +15,9 @@
 		B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */; };
 		B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11382A4A9E1D002D5258 /* GithubTableViewCell.swift */; };
 		B33A113B2A4AA29F002D5258 /* GitRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A113A2A4AA29F002D5258 /* GitRepository.swift */; };
+		B33A113F2A4C0EE5002D5258 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B33A113E2A4C0EE5002D5258 /* Kingfisher */; };
+		B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */; };
+		B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11422A4C122C002D5258 /* SearchBar.swift */; };
 		B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B36948152A3FEC2500DB1BAB /* RxDataSources */; };
 		B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */; };
 		B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948192A3FECA000DB1BAB /* MyTable.swift */; };
@@ -51,6 +54,8 @@
 		B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTableViewController.swift; sourceTree = "<group>"; };
 		B33A11382A4A9E1D002D5258 /* GithubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubTableViewCell.swift; sourceTree = "<group>"; };
 		B33A113A2A4AA29F002D5258 /* GitRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepository.swift; sourceTree = "<group>"; };
+		B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogViewController.swift; sourceTree = "<group>"; };
+		B33A11422A4C122C002D5258 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		B36948192A3FECA000DB1BAB /* MyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTable.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 				B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */,
 				B30FBCB12A32BDB9004A3495 /* Moya-ModelMapper in Frameworks */,
 				B30FBC972A32B525004A3495 /* RxOptional in Frameworks */,
+				B33A113F2A4C0EE5002D5258 /* Kingfisher in Frameworks */,
 				B30FBCAE2A32BDAD004A3495 /* Moya in Frameworks */,
 				B30FBC942A32B504004A3495 /* RxSwift in Frameworks */,
 				B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */,
@@ -109,6 +115,15 @@
 				B33A113A2A4AA29F002D5258 /* GitRepository.swift */,
 			);
 			path = Github;
+			sourceTree = "<group>";
+		};
+		B33A113C2A4ACD4A002D5258 /* SearchBlog */ = {
+			isa = PBXGroup;
+			children = (
+				B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */,
+				B33A11422A4C122C002D5258 /* SearchBar.swift */,
+			);
+			path = SearchBlog;
 			sourceTree = "<group>";
 		};
 		B36948132A3FEA8900DB1BAB /* MyTable */ = {
@@ -194,6 +209,7 @@
 				B3FB7AED2A41637F007B68AC /* SimpleLogin */,
 				B3FB7AF42A416CFC007B68AC /* Order */,
 				B33A11352A49644E002D5258 /* Github */,
+				B33A113C2A4ACD4A002D5258 /* SearchBlog */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -244,6 +260,7 @@
 				B30FBCAD2A32BDAD004A3495 /* Moya */,
 				B30FBCB02A32BDB9004A3495 /* Moya-ModelMapper */,
 				B36948152A3FEC2500DB1BAB /* RxDataSources */,
+				B33A113E2A4C0EE5002D5258 /* Kingfisher */,
 			);
 			productName = RxSwiftExample;
 			productReference = B3F142192A27080A00D2FB72 /* RxSwiftExample.app */;
@@ -281,6 +298,7 @@
 				B30FBCAC2A32BDAD004A3495 /* XCRemoteSwiftPackageReference "Moya" */,
 				B30FBCAF2A32BDB9004A3495 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */,
 				B36948142A3FEC2400DB1BAB /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				B33A113D2A4C0EE5002D5258 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B3F1421A2A27080A00D2FB72 /* Products */;
 			projectDirPath = "";
@@ -323,9 +341,11 @@
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
 				B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
+				B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */,
 				B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
+				B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */,
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
@@ -589,6 +609,14 @@
 				kind = branch;
 			};
 		};
+		B33A113D2A4C0EE5002D5258 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		B36948142A3FEC2400DB1BAB /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
@@ -640,6 +668,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B30FBCAF2A32BDB9004A3495 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */;
 			productName = "Moya-ModelMapper";
+		};
+		B33A113E2A4C0EE5002D5258 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B33A113D2A4C0EE5002D5258 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		B36948152A3FEC2500DB1BAB /* RxDataSources */ = {
 			isa = XCSwiftPackageProductDependency;
