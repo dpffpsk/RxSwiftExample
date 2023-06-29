@@ -19,6 +19,12 @@
 		B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */; };
 		B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11422A4C122C002D5258 /* SearchBar.swift */; };
 		B33A11452A4C1C01002D5258 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11442A4C1C01002D5258 /* FilterView.swift */; };
+		B33A11472A4C2018002D5258 /* BlogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11462A4C2018002D5258 /* BlogListView.swift */; };
+		B33A114A2A4D1901002D5258 /* BlogListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11492A4D1901002D5258 /* BlogListCell.swift */; };
+		B33A114F2A4D198A002D5258 /* BlogListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A114E2A4D198A002D5258 /* BlogListCellData.swift */; };
+		B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */; };
+		B33A11542A4D5D39002D5258 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11532A4D5D39002D5258 /* Blog.swift */; };
+		B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11562A4D5FC5002D5258 /* SearchBlogNetwork.swift */; };
 		B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B36948152A3FEC2500DB1BAB /* RxDataSources */; };
 		B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */; };
 		B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948192A3FECA000DB1BAB /* MyTable.swift */; };
@@ -58,6 +64,12 @@
 		B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogViewController.swift; sourceTree = "<group>"; };
 		B33A11422A4C122C002D5258 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		B33A11442A4C1C01002D5258 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		B33A11462A4C2018002D5258 /* BlogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListView.swift; sourceTree = "<group>"; };
+		B33A11492A4D1901002D5258 /* BlogListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCell.swift; sourceTree = "<group>"; };
+		B33A114E2A4D198A002D5258 /* BlogListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogListCellData.swift; sourceTree = "<group>"; };
+		B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
+		B33A11532A4D5D39002D5258 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
+		B33A11562A4D5FC5002D5258 /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
 		B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		B36948192A3FECA000DB1BAB /* MyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTable.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -122,11 +134,49 @@
 		B33A113C2A4ACD4A002D5258 /* SearchBlog */ = {
 			isa = PBXGroup;
 			children = (
-				B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */,
-				B33A11422A4C122C002D5258 /* SearchBar.swift */,
-				B33A11442A4C1C01002D5258 /* FilterView.swift */,
+				B33A114D2A4D197C002D5258 /* Entities */,
+				B33A11552A4D5FAE002D5258 /* Network */,
+				B33A114C2A4D1932002D5258 /* Presentation */,
 			);
 			path = SearchBlog;
+			sourceTree = "<group>";
+		};
+		B33A11482A4D18C3002D5258 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				B33A11442A4C1C01002D5258 /* FilterView.swift */,
+				B33A11462A4C2018002D5258 /* BlogListView.swift */,
+				B33A11492A4D1901002D5258 /* BlogListCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		B33A114C2A4D1932002D5258 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B33A11402A4C0F34002D5258 /* SearchBlogViewController.swift */,
+				B33A11422A4C122C002D5258 /* SearchBar.swift */,
+				B33A11482A4D18C3002D5258 /* TableView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B33A114D2A4D197C002D5258 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B33A114E2A4D198A002D5258 /* BlogListCellData.swift */,
+				B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */,
+				B33A11532A4D5D39002D5258 /* Blog.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B33A11552A4D5FAE002D5258 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B33A11562A4D5FC5002D5258 /* SearchBlogNetwork.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		B36948132A3FEA8900DB1BAB /* MyTable */ = {
@@ -331,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */,
+				B33A114F2A4D198A002D5258 /* BlogListCellData.swift in Sources */,
 				B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */,
 				B3DEC7952A31B82100B6D8B7 /* LoginViewController.swift in Sources */,
 				B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */,
@@ -343,17 +394,22 @@
 				B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */,
 				B3F142212A27080A00D2FB72 /* ViewController.swift in Sources */,
 				B3D83C072A28600F00515C45 /* GithubEndpoint.swift in Sources */,
+				B33A114A2A4D1901002D5258 /* BlogListCell.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
 				B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */,
 				B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */,
+				B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
 				B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */,
+				B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */,
+				B33A11542A4D5D39002D5258 /* Blog.swift in Sources */,
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
 				B3F1421D2A27080A00D2FB72 /* AppDelegate.swift in Sources */,
 				B3FB7AF62A416D51007B68AC /* OrderViewController.swift in Sources */,
 				B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */,
+				B33A11472A4C2018002D5258 /* BlogListView.swift in Sources */,
 				B3FB7AF82A416DEF007B68AC /* OrderView.swift in Sources */,
 				B33A11452A4C1C01002D5258 /* FilterView.swift in Sources */,
 				B3F1421F2A27080A00D2FB72 /* SceneDelegate.swift in Sources */,
