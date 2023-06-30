@@ -25,6 +25,7 @@
 		B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */; };
 		B33A11542A4D5D39002D5258 /* Blog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11532A4D5D39002D5258 /* Blog.swift */; };
 		B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11562A4D5FC5002D5258 /* SearchBlogNetwork.swift */; };
+		B33A11592A4E92A8002D5258 /* SearchNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11582A4E92A8002D5258 /* SearchNetworkError.swift */; };
 		B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B36948152A3FEC2500DB1BAB /* RxDataSources */; };
 		B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */; };
 		B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36948192A3FECA000DB1BAB /* MyTable.swift */; };
@@ -70,6 +71,7 @@
 		B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionConvertible.swift; sourceTree = "<group>"; };
 		B33A11532A4D5D39002D5258 /* Blog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blog.swift; sourceTree = "<group>"; };
 		B33A11562A4D5FC5002D5258 /* SearchBlogNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBlogNetwork.swift; sourceTree = "<group>"; };
+		B33A11582A4E92A8002D5258 /* SearchNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkError.swift; sourceTree = "<group>"; };
 		B36948172A3FEC5C00DB1BAB /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		B36948192A3FECA000DB1BAB /* MyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTable.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				B33A114E2A4D198A002D5258 /* BlogListCellData.swift */,
 				B33A11512A4D5A34002D5258 /* AlertActionConvertible.swift */,
 				B33A11532A4D5D39002D5258 /* Blog.swift */,
+				B33A11582A4E92A8002D5258 /* SearchNetworkError.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				B33A114A2A4D1901002D5258 /* BlogListCell.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
 				B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */,
+				B33A11592A4E92A8002D5258 /* SearchNetworkError.swift in Sources */,
 				B33A11392A4A9E1D002D5258 /* GithubTableViewCell.swift in Sources */,
 				B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
