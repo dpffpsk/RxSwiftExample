@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
-                    "SimpleLogin", "Order", "Github", "SearchBlog"]
+                    "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,6 +73,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             print("index 8")
             let searchBlogVC = SearchBlogViewController()
             self.navigationController?.pushViewController(searchBlogVC, animated: true)
+        case 9:
+            print("index 9")
+            let UsedGoodsVC = UsedGoodsViewController()
+            self.navigationController?.pushViewController(UsedGoodsVC, animated: true)
         default:
             print("default")
         }
