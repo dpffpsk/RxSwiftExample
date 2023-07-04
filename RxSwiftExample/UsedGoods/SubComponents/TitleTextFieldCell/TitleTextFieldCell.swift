@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 import SnapKit
 
+// 글 제목 Cell
 class TitleTextFieldCell: UITableViewCell {
     let disposeBag = DisposeBag()
     let titleInputField = UITextField()
