@@ -36,6 +36,8 @@
 		B38CD8022A52A22A0059C8F0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8012A52A22A0059C8F0 /* Category.swift */; };
 		B38CD8052A53F6940059C8F0 /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8042A53F6940059C8F0 /* CategoryListViewController.swift */; };
 		B38CD8072A53F6A40059C8F0 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8062A53F6A40059C8F0 /* CategoryViewModel.swift */; };
+		B38CD80A2A53FF890059C8F0 /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8092A53FF890059C8F0 /* PriceTextFieldCell.swift */; };
+		B38CD80C2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD80B2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift */; };
 		B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */; };
 		B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C022A28598900515C45 /* IssueListViewController.swift */; };
 		B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D83C042A285A3600515C45 /* IssueListView.swift */; };
@@ -88,6 +90,8 @@
 		B38CD8012A52A22A0059C8F0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B38CD8042A53F6940059C8F0 /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
 		B38CD8062A53F6A40059C8F0 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		B38CD8092A53FF890059C8F0 /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
+		B38CD80B2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCellViewModel.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		B3D83C022A28598900515C45 /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		B3D83C042A285A3600515C45 /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
@@ -228,8 +232,9 @@
 		B38CD7FF2A5299680059C8F0 /* SubComponents */ = {
 			isa = PBXGroup;
 			children = (
-				B38CD8032A52A2D60059C8F0 /* CategoryListViewController */,
 				B38CD7FA2A5298FD0059C8F0 /* TitleTextFieldCell */,
+				B38CD8032A52A2D60059C8F0 /* CategoryListViewController */,
+				B38CD8082A53FF6A0059C8F0 /* PriceTextFieldCell */,
 			);
 			path = SubComponents;
 			sourceTree = "<group>";
@@ -249,6 +254,15 @@
 				B38CD8062A53F6A40059C8F0 /* CategoryViewModel.swift */,
 			);
 			path = CategoryListViewController;
+			sourceTree = "<group>";
+		};
+		B38CD8082A53FF6A0059C8F0 /* PriceTextFieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				B38CD8092A53FF890059C8F0 /* PriceTextFieldCell.swift */,
+				B38CD80B2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift */,
+			);
+			path = PriceTextFieldCell;
 			sourceTree = "<group>";
 		};
 		B3D83BFE2A28590100515C45 /* IssueList */ = {
@@ -470,6 +484,7 @@
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
 				B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */,
 				B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */,
+				B38CD80A2A53FF890059C8F0 /* PriceTextFieldCell.swift in Sources */,
 				B33A11542A4D5D39002D5258 /* Blog.swift in Sources */,
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,
@@ -477,6 +492,7 @@
 				B38CD7F72A528B8E0059C8F0 /* UsedGoodsViewController.swift in Sources */,
 				B3FB7AF62A416D51007B68AC /* OrderViewController.swift in Sources */,
 				B369481A2A3FECA000DB1BAB /* MyTable.swift in Sources */,
+				B38CD80C2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift in Sources */,
 				B33A11472A4C2018002D5258 /* BlogListView.swift in Sources */,
 				B3FB7AF82A416DEF007B68AC /* OrderView.swift in Sources */,
 				B33A11452A4C1C01002D5258 /* FilterView.swift in Sources */,
