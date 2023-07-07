@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 
+
 class PriceTextFieldCell: UITableViewCell {
     let disposeBag = DisposeBag()
     
