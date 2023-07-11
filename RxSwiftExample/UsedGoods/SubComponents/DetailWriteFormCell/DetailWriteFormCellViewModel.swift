@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import RxCocoa
+
+struct DetailWriteFormCellViewModel {
+    let contentValue = PublishRelay<String?>()
+}

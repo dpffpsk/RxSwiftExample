@@ -216,9 +216,9 @@
 		B38CD7F52A5289D90059C8F0 /* UsedGoods */ = {
 			isa = PBXGroup;
 			children = (
-				B38CD8002A52A20A0059C8F0 /* Entities */,
 				B38CD7F62A528B8E0059C8F0 /* UsedGoodsViewController.swift */,
 				B38CD7F82A528C0D0059C8F0 /* UsedGoodsViewModel.swift */,
+				B38CD8002A52A20A0059C8F0 /* Entities */,
 				B38CD7FF2A5299680059C8F0 /* SubComponents */,
 			);
 			path = UsedGoods;

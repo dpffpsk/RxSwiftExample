@@ -49,9 +49,10 @@ class UsedGoodsViewController: UIViewController {
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView = UIView()
         
-        tableView.register(TitleTextFieldCell.self, forCellReuseIdentifier: "TitleTextFieldCell") // index row 0
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryListCell") // index row 1
-        tableView.register(PriceTextFieldCell.self, forCellReuseIdentifier: "PriceTextFieldCell") // index row 2
+        tableView.register(TitleTextFieldCell.self, forCellReuseIdentifier: "TitleTextFieldCell")   // index row 0
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryListCell")        // index row 1
+        tableView.register(PriceTextFieldCell.self, forCellReuseIdentifier: "PriceTextFieldCell")   // index row 2
+        tableView.register(DetailWriteFormCell.self, forCellReuseIdentifier: "DetailWriteFormCell") // index row 3
     }
     
     private func layout() {
