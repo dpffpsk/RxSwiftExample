@@ -13,17 +13,17 @@ struct CategoryViewModel {
     let disposeBag = DisposeBag()
 
     // ViewModel -> View
-    // 카테고리 데이터
+    /// 카테고리 데이터
     let cellData: Driver<[Category]>
-    // pop 이벤트
+    /// pop 이벤트
     let pop: Signal<Void>
     
     // View -> ViewModel
-    // 선택된 카테고리가 무엇인지 row값 가져오기
+    /// 선택된 카테고리가 무엇인지 row값 가져오기
     let itemSelected = PublishRelay<Int>()
     
     // ViewModel -> ParentsViewModel
-    // 메인뷰에 전달할 카테고리
+    /// 메인뷰에 전달할 카테고리
     let selectedCategory = PublishSubject<Category>()
     
     init() {
