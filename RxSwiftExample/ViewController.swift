@@ -75,7 +75,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(searchBlogVC, animated: true)
         case 9:
             print("index 9")
+            
             let UsedGoodsVC = UsedGoodsViewController()
+            let rootViewModel = UsedGoodsViewModel()
+            
+            UsedGoodsVC.bind(rootViewModel)
+            
             self.navigationController?.pushViewController(UsedGoodsVC, animated: true)
         default:
             print("default")

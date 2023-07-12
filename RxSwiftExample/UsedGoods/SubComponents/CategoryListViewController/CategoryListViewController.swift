@@ -16,6 +16,8 @@ class CategoryListViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
+        attribute()
+        layout()
     }
     
     required init?(coder: NSCoder) {
@@ -46,10 +48,10 @@ class CategoryListViewController: UIViewController {
     }
     
     private func attribute() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .systemGroupedBackground
         
         tableView.backgroundColor = .white
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CategoryListCell")
         tableView.separatorStyle = .singleLine
         tableView.tableFooterView = UIView()
     }

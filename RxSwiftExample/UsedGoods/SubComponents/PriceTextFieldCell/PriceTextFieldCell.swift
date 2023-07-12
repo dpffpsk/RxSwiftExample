@@ -56,11 +56,11 @@ class PriceTextFieldCell: UITableViewCell {
     
     private func attribute() {
         // 무료나눔 버튼
-        freeshareButton.setTitle("FREE", for: .normal)
+        freeshareButton.setTitle("FREE ", for: .normal)
         freeshareButton.setTitleColor(.white, for: .normal)
         freeshareButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         freeshareButton.titleLabel?.font = .systemFont(ofSize: 18)
-        freeshareButton.tintColor = .systemBlue
+        freeshareButton.tintColor = .white
         freeshareButton.backgroundColor = .systemBlue
         freeshareButton.layer.cornerRadius = 10.0
         freeshareButton.clipsToBounds = true
