@@ -11,11 +11,11 @@ class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
                     "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods",
-                    "Binding"]
+                    "Binding", "Rxmemo"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 }
 
@@ -76,7 +76,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(searchBlogVC, animated: true)
         case 9:
             print("index 9")
-            
             let usedGoodsVC = UsedGoodsViewController()
             let rootViewModel = UsedGoodsViewModel()
             
@@ -87,6 +86,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             print("index 10")
             let bindingVC = BindingRxCocoaViewController()
             self.navigationController?.pushViewController(bindingVC, animated: true)
+        case 11:
+            print("index 11")
+            let memoVC = BindingRxCocoaViewController()
+            self.navigationController?.pushViewController(memoVC, animated: true)
         default:
             print("default")
         }
