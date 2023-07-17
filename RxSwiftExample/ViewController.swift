@@ -10,7 +10,8 @@ import UIKit
 class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
-                    "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods"]
+                    "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods",
+                    "Binding"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,12 +77,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case 9:
             print("index 9")
             
-            let UsedGoodsVC = UsedGoodsViewController()
+            let usedGoodsVC = UsedGoodsViewController()
             let rootViewModel = UsedGoodsViewModel()
             
-            UsedGoodsVC.bind(rootViewModel)
+            usedGoodsVC.bind(rootViewModel)
             
-            self.navigationController?.pushViewController(UsedGoodsVC, animated: true)
+            self.navigationController?.pushViewController(usedGoodsVC, animated: true)
+        case 10:
+            print("index 10")
+            let bindingVC = BindingRxCocoaViewController()
+            self.navigationController?.pushViewController(bindingVC, animated: true)
         default:
             print("default")
         }

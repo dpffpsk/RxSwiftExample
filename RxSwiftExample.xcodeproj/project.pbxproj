@@ -62,6 +62,8 @@
 		B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */; };
 		B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142402A27200800D2FB72 /* CircleViewController.swift */; };
 		B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F142442A272CB100D2FB72 /* CircleViewModel.swift */; };
+		B3F6E43A2A64D16000E0844A /* BindingRxCocoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F6E4392A64D16000E0844A /* BindingRxCocoaViewController.swift */; };
+		B3F6E43C2A64D17800E0844A /* BindingCocoaTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F6E43B2A64D17800E0844A /* BindingCocoaTouchViewController.swift */; };
 		B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */; };
 		B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */; };
 		B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */; };
@@ -119,6 +121,8 @@
 		B3F1423D2A270D9100D2FB72 /* CitySearcherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySearcherView.swift; sourceTree = "<group>"; };
 		B3F142402A27200800D2FB72 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		B3F142442A272CB100D2FB72 /* CircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewModel.swift; sourceTree = "<group>"; };
+		B3F6E4392A64D16000E0844A /* BindingRxCocoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingRxCocoaViewController.swift; sourceTree = "<group>"; };
+		B3F6E43B2A64D17800E0844A /* BindingCocoaTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingCocoaTouchViewController.swift; sourceTree = "<group>"; };
 		B3FB7AEE2A4163BD007B68AC /* SimpleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewController.swift; sourceTree = "<group>"; };
 		B3FB7AF02A4163CE007B68AC /* SimpleLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginView.swift; sourceTree = "<group>"; };
 		B3FB7AF22A4163DF007B68AC /* SimpleLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewModel.swift; sourceTree = "<group>"; };
@@ -358,8 +362,18 @@
 				B33A11352A49644E002D5258 /* Github */,
 				B33A113C2A4ACD4A002D5258 /* SearchBlog */,
 				B38CD7F52A5289D90059C8F0 /* UsedGoods */,
+				B3F6E4382A64D0F200E0844A /* Binding */,
 			);
 			path = RxSwiftExample;
+			sourceTree = "<group>";
+		};
+		B3F6E4382A64D0F200E0844A /* Binding */ = {
+			isa = PBXGroup;
+			children = (
+				B3F6E4392A64D16000E0844A /* BindingRxCocoaViewController.swift */,
+				B3F6E43B2A64D17800E0844A /* BindingCocoaTouchViewController.swift */,
+			);
+			path = Binding;
 			sourceTree = "<group>";
 		};
 		B3FB7AED2A41637F007B68AC /* SimpleLogin */ = {
@@ -501,6 +515,8 @@
 				B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */,
 				B3B35AE92A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
+				B3F6E43C2A64D17800E0844A /* BindingCocoaTouchViewController.swift in Sources */,
+				B3F6E43A2A64D16000E0844A /* BindingRxCocoaViewController.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
 				B33A11432A4C122C002D5258 /* SearchBar.swift in Sources */,
 				B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */,
