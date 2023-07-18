@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-// 메모리에 메모를 저장
+// 메모 저장
 class MemoryStorage: MemoStorageType {
     // 메모를 저장할 배열
     private var list = [
@@ -20,7 +20,6 @@ class MemoryStorage: MemoStorageType {
     // 그냥 Observable 형식이면 불가능하기때문에, Subject 형태로 만든다
     // 그리고 처음에 더미데이터를 표시해야하기 때문에, BehaviorSubject 활용
     private lazy var store = BehaviorSubject<[Memo]>(value: list)
-    
     
     @discardableResult
     func createMemo(content: String) -> RxSwift.Observable<Memo> {
