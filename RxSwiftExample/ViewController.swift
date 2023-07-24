@@ -88,8 +88,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(bindingVC, animated: true)
         case 11:
             print("index 11")
-            let memoVC = BindingRxCocoaViewController()
-            self.navigationController?.pushViewController(memoVC, animated: true)
+            let storage = MemoryStorage()
+//            let coordinator = SceneCoordinator(viewController: self)
+            let listViewModel = MemoListViewModel(title: "나의 메모", storage: storage)
+            let listScene = Scene.list(listViewModel)
+//            coordinator.transition(to: listScene, using: .root, animated: false)
+            
+            self.navigationController?.pushViewController(listScene.instantiate(), animated: true)
         default:
             print("default")
         }

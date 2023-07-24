@@ -6,34 +6,59 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MemoListViewController: UIViewController, ViewModelBindableType {
 
+    let disposeBag = DisposeBag()
     var viewModel: MemoListViewModel!
     
-    let tableview = UITableView()
-    let addButton = UIBarButtonItem()
-    
+    let tableView = UITableView()
+    let button = UIButton()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        attribute()
+        layout()
     }
     
     func bindViewModel() {
+        // 뷰모델에 저장되어 있는 title을 navigationItem에 바인딩
+        viewModel.title
+            .drive(navigationItem.rx.title)
+            .disposed(by: disposeBag)
         
+        // 메모 목록을 tableView 셀에 바인딩
+        viewModel.memoList.bind(to: tableView.rx.items(cellIdentifier: "cell")) { row, memo, cell in
+            cell.accessoryType = .disclosureIndicator
+            cell.textLabel?.text = memo.content
+        }.disposed(by: disposeBag)
     }
     
     func attribute() {
         title = "메모 목록"
         view.backgroundColor = .white
         
-        addButton.style = .plain
-        addButton.title = "ADD"
+        // barButton
+        button.setImage(UIImage(systemName: "plus"), for: .normal)
+        button.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+    
+        let addButton = UIBarButtonItem(customView: button)
+        navigationItem.setRightBarButton(addButton, animated: true)
         
-        ad
+        // tableView
+        tableView.backgroundColor = .white
+        tableView.separatorStyle = .singleLine
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     func layout() {
+        view.addSubview(tableView)
         
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
 }

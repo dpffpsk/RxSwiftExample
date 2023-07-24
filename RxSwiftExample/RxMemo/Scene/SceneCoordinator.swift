@@ -10,15 +10,16 @@ import RxSwift
 import RxCocoa
 import UIKit
 
+// 화면 이동 및 삭제(사용하지X)
 class SceneCoordinator: SceneCoordinatorType {
     private let bag = DisposeBag()
     
-    private var window: UIWindow
+//    private var window: UIWindow
     private var currentVC: UIViewController
     
-    init(window: UIWindow) {
-        self.window = window
-        currentVC = window.rootViewController!
+    init(viewController: UIViewController) {
+//        self.window = window
+        self.currentVC = viewController
     }
     
     @discardableResult
