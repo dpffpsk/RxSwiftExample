@@ -25,8 +25,6 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
 
         attribute()
         layout()
-        
-        test.addTarget(self, action: #selector(<#T##@objc method#>), for: <#T##UIControl.Event#>)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,14 +50,18 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
             .drive(contentTextView.rx.text)
             .disposed(by: disposeBag)
         
-        // 취소액션 바인딩
-        cancelButton.rx.action = viewModel.cancelAction
+        // 취소버튼 이벤트 바인딩
+        cancelButton.rx.tap
+            .bind(to: viewModel.cancelButtonTapped)
+            .disposed(by: disposeBag)
+        
+        // 저장버튼 이벤트 바인딩
         // throttle : 더블탭방지
         // withLatestFrom 텍스트 뷰에 입력된 텍스트 방출
         saveButton.rx.tap
             .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .withLatestFrom(contentTextView.rx.text.orEmpty)
-            .bind(to: viewModel.saveAction.inputs)
+            .bind(to: viewModel.saveButtonTapped)
             .disposed(by: disposeBag)
     }
     
