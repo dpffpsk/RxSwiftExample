@@ -11,6 +11,7 @@ import RxCocoa
 import UIKit
 
 class MemoComposeViewModel: CommonViewModel {
+    let disposeBag = DisposeBag()
     private let content: String?
     
     var initialText: Driver<String?> {
@@ -21,19 +22,20 @@ class MemoComposeViewModel: CommonViewModel {
     let saveButtonTapped = PublishRelay<String>()
     
     // T는 UIViewController의 하위 클래스여야한다는 제약 설정
-    init<T: UIViewController>(title: String, content: String? = nil, storage: MemoStorageType, viewController: T) {
+    init<T: UIViewController>(title: String, content: String? = nil, sceneCoordinator: SceneCoordinatorType, storage: MemoStorageType, viewController: T) {
         self.content = content
         
-        // 화면 dismiss 구현해야함
-//        self.cancelButtonTapped
-//        self.saveButtonTapped
-        
-        print("================여기는 compose model")
-        
+        // 취소 버튼
         self.cancelButtonTapped
-            .map { _ in
-                print("========cancel")
-            }
+            .subscribe(onNext: { _ in
+                viewController.dismiss(animated: true)
+            }).disposed(by: disposeBag)
+        
+        // 저장 버튼
+        self.saveButtonTapped
+            .subscribe(onNext: { text in
+                print("==================save")
+            }).disposed(by: disposeBag)
         
         super.init(title: title, storage: storage)
     }

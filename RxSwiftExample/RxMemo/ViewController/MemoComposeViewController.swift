@@ -54,15 +54,27 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         cancelButton.rx.tap
             .bind(to: viewModel.cancelButtonTapped)
             .disposed(by: disposeBag)
+//        cancelButton.rx.tap
+//            .subscribe(onNext: { event in
+//                self.dismiss(animated: true)
+//            }).disposed(by: disposeBag)
         
         // 저장버튼 이벤트 바인딩
+        // 텍스트 뷰에 입력된 문자를 저장해야함
         // throttle : 더블탭방지
-        // withLatestFrom 텍스트 뷰에 입력된 텍스트 방출
+        // withLatestFrom : 가장 최신의 이벤트만 방출(텍스트 뷰에 입력된 텍스트 방출)
+        // orEmpty : 옵셔널 string 걸러줌
         saveButton.rx.tap
             .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .withLatestFrom(contentTextView.rx.text.orEmpty)
             .bind(to: viewModel.saveButtonTapped)
             .disposed(by: disposeBag)
+//        saveButton.rx.tap
+//            .throttle(.microseconds(500), scheduler: MainScheduler.instance)
+//            .withLatestFrom(contentTextView.rx.text.orEmpty)
+//            .subscribe(onNext: { event in
+//                self.dismiss(animated: true)
+//            }).disposed(by: disposeBag)
     }
     
     func attribute() {
@@ -75,8 +87,6 @@ class MemoComposeViewController: UIViewController, ViewModelBindableType {
         
         saveButton.title = "Save"
         navigationItem.setRightBarButton(saveButton, animated: true)
-
-        
     }
     
     func layout() {

@@ -36,6 +36,11 @@ class MemoListViewController: UIViewController, ViewModelBindableType {
             cell.accessoryType = .disclosureIndicator
             cell.textLabel?.text = memo.content
         }.disposed(by: disposeBag)
+        
+        button.rx.tap
+            .bind { [weak self] in
+                self?.viewModel.makeCreateAction()
+            }.disposed(by: disposeBag)
     }
     
     func attribute() {
