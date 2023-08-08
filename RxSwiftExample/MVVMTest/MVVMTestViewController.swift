@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import RxDataSources
 
 class MVVMTestViewController: UIViewController {
 
@@ -38,6 +39,8 @@ class MVVMTestViewController: UIViewController {
     
     func bindTableView() {
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        /*
         viewModel.users.bind(to: tableView.rx.items(cellIdentifier: "UserTableViewCell", cellType: UserTableViewCell.self)) {
             row, item, cell in
             var content = cell.defaultContentConfiguration()
@@ -67,6 +70,44 @@ class MVVMTestViewController: UIViewController {
         tableView.rx.itemDeleted.subscribe(onNext: { [weak self] indexPath in
             guard let self = self else { return }
             self.viewModel.deleteUser(index: indexPath.row)
+        }).disposed(by: disposeBag)
+         */
+        
+        let dataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, User>> { _, tableView, indexPath, item in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UserTableViewCell", for: indexPath) as! UserTableViewCell
+            
+            var content = cell.defaultContentConfiguration()
+            content.text = item.title
+            content.secondaryText = "\(item.id)"
+            cell.contentConfiguration = content
+            
+            return cell
+        } titleForHeaderInSection: { dataSource, sectionIndex in
+            return dataSource[sectionIndex].model
+        }
+        
+        self.viewModel.users.bind(to: self.tableView.rx.items(dataSource: dataSource)).disposed(by: disposeBag)
+        
+        tableView.rx.itemDeleted.subscribe(onNext: { [weak self] indexPath in
+            guard let self = self else { return }
+            self.viewModel.deleteUser(indexPath: indexPath)
+        }).disposed(by: disposeBag)
+        
+        tableView.rx.itemSelected.subscribe(onNext: { indexPath in
+            let alert = UIAlertController(title: "Alert", message: "Edit Note", preferredStyle: .alert)
+            alert.addTextField { textfield in
+                
+            }
+            
+            alert.addAction(UIAlertAction(title: "Edit", style: .default, handler: { action in
+                let textField = alert.textFields![0] as UITextField
+                self.viewModel.editUser(title: textField.text ?? "", indexPath: indexPath)
+            }))
+            
+            DispatchQueue.main.async {
+                print("alert")
+                self.present(alert, animated: true)
+            }
         }).disposed(by: disposeBag)
     }
 
