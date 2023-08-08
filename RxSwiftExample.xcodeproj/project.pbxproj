@@ -39,6 +39,10 @@
 		B38CD8072A53F6A40059C8F0 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8062A53F6A40059C8F0 /* CategoryViewModel.swift */; };
 		B38CD80A2A53FF890059C8F0 /* PriceTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD8092A53FF890059C8F0 /* PriceTextFieldCell.swift */; };
 		B38CD80C2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38CD80B2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift */; };
+		B38EFB9A2A820D4500812875 /* MVVMTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFB992A820D4500812875 /* MVVMTestViewController.swift */; };
+		B38EFB9D2A820DF900812875 /* MVVMTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFB9C2A820DF900812875 /* MVVMTestViewModel.swift */; };
+		B38EFB9F2A820F1000812875 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFB9E2A820F1000812875 /* User.swift */; };
+		B38EFBA12A8212B700812875 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBA02A8212B700812875 /* UserTableViewCell.swift */; };
 		B3B35AE72A5BEE3600A2D557 /* DetailWriteFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B35AE62A5BEE3600A2D557 /* DetailWriteFormCell.swift */; };
 		B3B35AE92A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B35AE82A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift */; };
 		B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */; };
@@ -114,6 +118,10 @@
 		B38CD8062A53F6A40059C8F0 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		B38CD8092A53FF890059C8F0 /* PriceTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCell.swift; sourceTree = "<group>"; };
 		B38CD80B2A53FF9C0059C8F0 /* PriceTextFieldCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTextFieldCellViewModel.swift; sourceTree = "<group>"; };
+		B38EFB992A820D4500812875 /* MVVMTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTestViewController.swift; sourceTree = "<group>"; };
+		B38EFB9C2A820DF900812875 /* MVVMTestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTestViewModel.swift; sourceTree = "<group>"; };
+		B38EFB9E2A820F1000812875 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B38EFBA02A8212B700812875 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		B3B35AE62A5BEE3600A2D557 /* DetailWriteFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCell.swift; sourceTree = "<group>"; };
 		B3B35AE82A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCellViewModel.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -309,6 +317,17 @@
 			path = PriceTextFieldCell;
 			sourceTree = "<group>";
 		};
+		B38EFB982A820D2C00812875 /* MVVMTest */ = {
+			isa = PBXGroup;
+			children = (
+				B38EFB992A820D4500812875 /* MVVMTestViewController.swift */,
+				B38EFB9C2A820DF900812875 /* MVVMTestViewModel.swift */,
+				B38EFB9E2A820F1000812875 /* User.swift */,
+				B38EFBA02A8212B700812875 /* UserTableViewCell.swift */,
+			);
+			path = MVVMTest;
+			sourceTree = "<group>";
+		};
 		B3B35AE52A5BEE2100A2D557 /* DetailWriteFormCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,6 +415,7 @@
 				B38CD7F52A5289D90059C8F0 /* UsedGoods */,
 				B3F6E4382A64D0F200E0844A /* Binding */,
 				B3F6E43D2A650AA600E0844A /* RxMemo */,
+				B38EFB982A820D2C00812875 /* MVVMTest */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -614,6 +634,7 @@
 				B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */,
 				B3DEC7972A31B86200B6D8B7 /* LoginView.swift in Sources */,
 				B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */,
+				B38EFB9D2A820DF900812875 /* MVVMTestViewModel.swift in Sources */,
 				B3FB7AFA2A41875E007B68AC /* OrderTableViewCell.swift in Sources */,
 				B3DEC78B2A315F1A00B6D8B7 /* RepositoryEntity.swift in Sources */,
 				B3FB7AEF2A4163BD007B68AC /* SimpleLoginViewController.swift in Sources */,
@@ -629,6 +650,7 @@
 				B32E44652A5E3DB700BC88D3 /* UsedGoodsModel.swift in Sources */,
 				B3F6E45E2A662DFE00E0844A /* TransitionModel.swift in Sources */,
 				B3F142412A27200800D2FB72 /* CircleViewController.swift in Sources */,
+				B38EFB9A2A820D4500812875 /* MVVMTestViewController.swift in Sources */,
 				B33A11412A4C0F34002D5258 /* SearchBlogViewController.swift in Sources */,
 				B33A11592A4E92A8002D5258 /* SearchNetworkError.swift in Sources */,
 				B3F6E45B2A662A6400E0844A /* ViewModelBindableType.swift in Sources */,
@@ -640,6 +662,7 @@
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
 				B3F6E43C2A64D17800E0844A /* BindingCocoaTouchViewController.swift in Sources */,
 				B3F6E4622A6655A700E0844A /* SceneCoordinatorType.swift in Sources */,
+				B38EFBA12A8212B700812875 /* UserTableViewCell.swift in Sources */,
 				B3F6E43A2A64D16000E0844A /* BindingRxCocoaViewController.swift in Sources */,
 				B3D83C032A28598900515C45 /* IssueListViewController.swift in Sources */,
 				B3F6E44F2A661F8F00E0844A /* MemoListViewController.swift in Sources */,
@@ -647,6 +670,7 @@
 				B33A11572A4D5FC5002D5258 /* SearchBlogNetwork.swift in Sources */,
 				B38CD80A2A53FF890059C8F0 /* PriceTextFieldCell.swift in Sources */,
 				B33A11542A4D5D39002D5258 /* Blog.swift in Sources */,
+				B38EFB9F2A820F1000812875 /* User.swift in Sources */,
 				B3DEC7892A315F0000B6D8B7 /* IssueEntity.swift in Sources */,
 				B3F6E4662A66674D00E0844A /* CommonViewModel.swift in Sources */,
 				B3F1423E2A270D9100D2FB72 /* CitySearcherView.swift in Sources */,

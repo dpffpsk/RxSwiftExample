@@ -37,7 +37,7 @@ class MemoComposeViewModel: CommonViewModel {
                 print("==================save")
             }).disposed(by: disposeBag)
         
-        super.init(title: title, storage: storage)
+        super.init(title: title, sceneCoordinator: sceneCoordinator as! SceneCoordinator, storage: storage)
     }
     
     

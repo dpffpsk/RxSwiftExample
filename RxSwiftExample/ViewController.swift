@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
                     "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods",
-                    "Binding", "Rxmemo"]
+                    "Binding", "Rxmemo", "MVVM"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,11 +90,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             print("index 11")
             let storage = MemoryStorage()
 //            let coordinator = SceneCoordinator(viewController: self)
-            let listViewModel = MemoListViewModel(title: "나의 메모", storage: storage)
-            let listScene = Scene.list(listViewModel)
+//            let listViewModel = MemoListViewModel(title: "나의 메모", storage: storage)
+//            let listScene = Scene.list(listViewModel)
 //            coordinator.transition(to: listScene, using: .root, animated: false)
             
-            self.navigationController?.pushViewController(listScene.instantiate(), animated: true)
+//            self.navigationController?.pushViewController(listScene.instantiate(), animated: true)
+            
+        case 12:
+            print("index 12")
+            let MVVMTestVC = MVVMTestViewController()
+            self.navigationController?.pushViewController(MVVMTestVC, animated: true)
         default:
             print("default")
         }
