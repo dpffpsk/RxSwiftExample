@@ -29,20 +29,24 @@ class MVVMTestViewModel {
         task.resume()
     }
     
-//    // 추가
-//    func addUser(user: User) {
-//        
-//    }
-//    
-//    // 삭제
-//    func deleteUser(index: Int) {
-//        guard var users = try? users.value() else { return }
-//        users.remove(at: index)
-//        self.users.onNext(users)
-//    }
-//    
-//    // 수정
-//    func editUser(title: String, index: Int) {
-//        
-//    }
+    // 추가
+    func addUser(user: User) {
+        guard var users = try? users.value() else { return }
+        users.insert(user, at: 0)
+        self.users.onNext(users)
+    }
+    
+    // 삭제
+    func deleteUser(index: Int) {
+        guard var users = try? users.value() else { return }
+        users.remove(at: index)
+        self.users.onNext(users)
+    }
+    
+    // 수정
+    func editUser(title: String, index: Int) {
+        guard var users = try? users.value() else { return }
+        users[index].title = title
+        self.users.onNext(users)
+    }
 }

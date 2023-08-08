@@ -23,10 +23,17 @@ class MVVMTestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Users"
+        let add = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(onTapAdd))
+        self.navigationItem.rightBarButtonItem = add
         self.view.addSubview(tableView)
         viewModel.fetchUsers()
         bindTableView()
+    }
+    
+    @objc func onTapAdd() {
+        let user = User(userID: 50001, id: 42343, title: "wony", body: "Look at this!!!!!!!!!")
+        self.viewModel.addUser(user: user)
     }
     
     func bindTableView() {
@@ -40,14 +47,27 @@ class MVVMTestViewController: UIViewController {
             
         }.disposed(by: disposeBag)
         
-//        tableView.rx.itemSelected.subscribe(onNext: { indexPath in
-//            print(indexPath.row)
-//        }).disposed(by: disposeBag)
-//        
-//        tableView.rx.itemDeleted.subscribe(onNext: { [weak self] indexPath in
-//            guard let self = self else { return }
-//            self.viewModel.deleteUser(index: indexPath.row)
-//        }).disposed(by: disposeBag)
+        tableView.rx.itemSelected.subscribe(onNext: { indexPath in
+            let alert = UIAlertController(title: "Alert", message: "Edit Note", preferredStyle: .alert)
+            alert.addTextField { textfield in
+                
+            }
+            
+            alert.addAction(UIAlertAction(title: "Edit", style: .default, handler: { action in
+                let textField = alert.textFields![0] as UITextField
+                self.viewModel.editUser(title: textField.text ?? "", index: indexPath.row)
+            }))
+            
+            DispatchQueue.main.async {
+                print("alert")
+                self.present(alert, animated: true)
+            }
+        }).disposed(by: disposeBag)
+        
+        tableView.rx.itemDeleted.subscribe(onNext: { [weak self] indexPath in
+            guard let self = self else { return }
+            self.viewModel.deleteUser(index: indexPath.row)
+        }).disposed(by: disposeBag)
     }
 
 }
