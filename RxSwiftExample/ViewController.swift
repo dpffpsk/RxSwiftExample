@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
                     "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods",
-                    "Binding", "Rxmemo", "MVVM"]
+                    "Binding", "Rxmemo", "MVVMTest", "MVVMLogin"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,11 +95,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 //            coordinator.transition(to: listScene, using: .root, animated: false)
             
 //            self.navigationController?.pushViewController(listScene.instantiate(), animated: true)
-            
         case 12:
             print("index 12")
             let MVVMTestVC = MVVMTestViewController()
             self.navigationController?.pushViewController(MVVMTestVC, animated: true)
+        case 13:
+            print("index 13")
+            let MVVMLoginVC = MVVMLoginViewController()
+            self.navigationController?.pushViewController(MVVMLoginVC, animated: true)
         default:
             print("default")
         }
