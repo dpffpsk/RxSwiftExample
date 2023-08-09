@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     let menuList = ["CitySearcher", "CircleView", "IssueListView", "LoginView", "MyTable",
                     "SimpleLogin", "Order", "Github", "SearchBlog", "UsedGoods",
-                    "Binding", "Rxmemo", "MVVMTest", "MVVMLogin"]
+                    "Binding", "Rxmemo", "MVVMTest", "MVVMLogin", "MVVMMoya"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +103,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             print("index 13")
             let MVVMLoginVC = MVVMLoginViewController()
             self.navigationController?.pushViewController(MVVMLoginVC, animated: true)
+        case 14:
+            print("index 14")
+            let moyaVC = MoyaViewController()
+            self.navigationController?.pushViewController(moyaVC, animated: true)
         default:
             print("default")
         }

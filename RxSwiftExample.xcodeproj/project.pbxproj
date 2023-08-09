@@ -10,7 +10,6 @@
 		B30FBC922A32B504004A3495 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBC912A32B504004A3495 /* RxCocoa */; };
 		B30FBC942A32B504004A3495 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBC932A32B504004A3495 /* RxSwift */; };
 		B30FBC972A32B525004A3495 /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBC962A32B525004A3495 /* RxOptional */; };
-		B30FBCAE2A32BDAD004A3495 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBCAD2A32BDAD004A3495 /* Moya */; };
 		B30FBCB12A32BDB9004A3495 /* Moya-ModelMapper in Frameworks */ = {isa = PBXBuildFile; productRef = B30FBCB02A32BDB9004A3495 /* Moya-ModelMapper */; };
 		B32E44652A5E3DB700BC88D3 /* UsedGoodsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32E44642A5E3DB700BC88D3 /* UsedGoodsModel.swift */; };
 		B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A11362A4A9DC7002D5258 /* GithubTableViewController.swift */; };
@@ -45,6 +44,14 @@
 		B38EFBA12A8212B700812875 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBA02A8212B700812875 /* UserTableViewCell.swift */; };
 		B38EFBA42A832A0D00812875 /* MVVMLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBA32A832A0D00812875 /* MVVMLoginViewController.swift */; };
 		B38EFBA62A835F7D00812875 /* MVVMLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBA52A835F7D00812875 /* MVVMLoginViewModel.swift */; };
+		B38EFBA92A836A5900812875 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBA82A836A5900812875 /* MoyaService.swift */; };
+		B38EFBAB2A836D5F00812875 /* MoyaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBAA2A836D5F00812875 /* MoyaViewModel.swift */; };
+		B38EFBAE2A83723E00812875 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B38EFBAD2A83723E00812875 /* CombineMoya */; };
+		B38EFBB02A83723E00812875 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B38EFBAF2A83723E00812875 /* Moya */; };
+		B38EFBB22A83723E00812875 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B38EFBB12A83723E00812875 /* ReactiveMoya */; };
+		B38EFBB42A83723E00812875 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B38EFBB32A83723E00812875 /* RxMoya */; };
+		B38EFBB62A83749100812875 /* MoyaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBB52A83749100812875 /* MoyaViewController.swift */; };
+		B38EFBB82A83786D00812875 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38EFBB72A83786D00812875 /* UserModel.swift */; };
 		B3B35AE72A5BEE3600A2D557 /* DetailWriteFormCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B35AE62A5BEE3600A2D557 /* DetailWriteFormCell.swift */; };
 		B3B35AE92A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B35AE82A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift */; };
 		B3C8EABB2A42B70500C31551 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */; };
@@ -126,6 +133,10 @@
 		B38EFBA02A8212B700812875 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		B38EFBA32A832A0D00812875 /* MVVMLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLoginViewController.swift; sourceTree = "<group>"; };
 		B38EFBA52A835F7D00812875 /* MVVMLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMLoginViewModel.swift; sourceTree = "<group>"; };
+		B38EFBA82A836A5900812875 /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
+		B38EFBAA2A836D5F00812875 /* MoyaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewModel.swift; sourceTree = "<group>"; };
+		B38EFBB52A83749100812875 /* MoyaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaViewController.swift; sourceTree = "<group>"; };
+		B38EFBB72A83786D00812875 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B3B35AE62A5BEE3600A2D557 /* DetailWriteFormCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCell.swift; sourceTree = "<group>"; };
 		B3B35AE82A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWriteFormCellViewModel.swift; sourceTree = "<group>"; };
 		B3C8EABA2A42B70500C31551 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
@@ -182,13 +193,16 @@
 			files = (
 				B3F142322A2709DD00D2FB72 /* SnapKit in Frameworks */,
 				B30FBCB12A32BDB9004A3495 /* Moya-ModelMapper in Frameworks */,
+				B38EFBAE2A83723E00812875 /* CombineMoya in Frameworks */,
 				B30FBC972A32B525004A3495 /* RxOptional in Frameworks */,
 				B33A113F2A4C0EE5002D5258 /* Kingfisher in Frameworks */,
-				B30FBCAE2A32BDAD004A3495 /* Moya in Frameworks */,
 				B30FBC942A32B504004A3495 /* RxSwift in Frameworks */,
+				B38EFBB42A83723E00812875 /* RxMoya in Frameworks */,
 				B36948162A3FEC2500DB1BAB /* RxDataSources in Frameworks */,
 				B30FBC922A32B504004A3495 /* RxCocoa in Frameworks */,
+				B38EFBB02A83723E00812875 /* Moya in Frameworks */,
 				B3F1423A2A270A0D00D2FB72 /* Then in Frameworks */,
+				B38EFBB22A83723E00812875 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +355,17 @@
 			path = MVVMLogin;
 			sourceTree = "<group>";
 		};
+		B38EFBA72A836A0700812875 /* Moya */ = {
+			isa = PBXGroup;
+			children = (
+				B38EFBA82A836A5900812875 /* MoyaService.swift */,
+				B38EFBAA2A836D5F00812875 /* MoyaViewModel.swift */,
+				B38EFBB52A83749100812875 /* MoyaViewController.swift */,
+				B38EFBB72A83786D00812875 /* UserModel.swift */,
+			);
+			path = Moya;
+			sourceTree = "<group>";
+		};
 		B3B35AE52A5BEE2100A2D557 /* DetailWriteFormCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +455,7 @@
 				B3F6E43D2A650AA600E0844A /* RxMemo */,
 				B38EFB982A820D2C00812875 /* MVVMTest */,
 				B38EFBA22A8329E500812875 /* MVVMLogin */,
+				B38EFBA72A836A0700812875 /* Moya */,
 			);
 			path = RxSwiftExample;
 			sourceTree = "<group>";
@@ -565,10 +591,13 @@
 				B30FBC912A32B504004A3495 /* RxCocoa */,
 				B30FBC932A32B504004A3495 /* RxSwift */,
 				B30FBC962A32B525004A3495 /* RxOptional */,
-				B30FBCAD2A32BDAD004A3495 /* Moya */,
 				B30FBCB02A32BDB9004A3495 /* Moya-ModelMapper */,
 				B36948152A3FEC2500DB1BAB /* RxDataSources */,
 				B33A113E2A4C0EE5002D5258 /* Kingfisher */,
+				B38EFBAD2A83723E00812875 /* CombineMoya */,
+				B38EFBAF2A83723E00812875 /* Moya */,
+				B38EFBB12A83723E00812875 /* ReactiveMoya */,
+				B38EFBB32A83723E00812875 /* RxMoya */,
 			);
 			productName = RxSwiftExample;
 			productReference = B3F142192A27080A00D2FB72 /* RxSwiftExample.app */;
@@ -603,10 +632,10 @@
 				B3F142382A270A0D00D2FB72 /* XCRemoteSwiftPackageReference "Then" */,
 				B30FBC902A32B504004A3495 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				B30FBC952A32B525004A3495 /* XCRemoteSwiftPackageReference "RxOptional" */,
-				B30FBCAC2A32BDAD004A3495 /* XCRemoteSwiftPackageReference "Moya" */,
 				B30FBCAF2A32BDB9004A3495 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */,
 				B36948142A3FEC2400DB1BAB /* XCRemoteSwiftPackageReference "RxDataSources" */,
 				B33A113D2A4C0EE5002D5258 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = B3F1421A2A27080A00D2FB72 /* Products */;
 			projectDirPath = "";
@@ -638,6 +667,7 @@
 				B33A11372A4A9DC7002D5258 /* GithubTableViewController.swift in Sources */,
 				B33A114F2A4D198A002D5258 /* BlogListCellData.swift in Sources */,
 				B3FB7AF32A4163DF007B68AC /* SimpleLoginViewModel.swift in Sources */,
+				B38EFBA92A836A5900812875 /* MoyaService.swift in Sources */,
 				B3DEC7952A31B82100B6D8B7 /* LoginViewController.swift in Sources */,
 				B38CD7FE2A5299390059C8F0 /* TitleTextFieldViewModel.swift in Sources */,
 				B3F6E4592A662A2900E0844A /* MemoComposeViewModel.swift in Sources */,
@@ -646,6 +676,7 @@
 				B3D83C052A285A3700515C45 /* IssueListView.swift in Sources */,
 				B3F1423C2A270D6A00D2FB72 /* CitySearcherViewController.swift in Sources */,
 				B36948182A3FEC5C00DB1BAB /* MyTableViewController.swift in Sources */,
+				B38EFBB62A83749100812875 /* MoyaViewController.swift in Sources */,
 				B38EFBA62A835F7D00812875 /* MVVMLoginViewModel.swift in Sources */,
 				B3DEC7972A31B86200B6D8B7 /* LoginView.swift in Sources */,
 				B3FB7AF12A4163CE007B68AC /* SimpleLoginView.swift in Sources */,
@@ -676,7 +707,9 @@
 				B33A11522A4D5A34002D5258 /* AlertActionConvertible.swift in Sources */,
 				B3B35AE92A5BEE5200A2D557 /* DetailWriteFormCellViewModel.swift in Sources */,
 				B3F142452A272CB100D2FB72 /* CircleViewModel.swift in Sources */,
+				B38EFBB82A83786D00812875 /* UserModel.swift in Sources */,
 				B3F6E43C2A64D17800E0844A /* BindingCocoaTouchViewController.swift in Sources */,
+				B38EFBAB2A836D5F00812875 /* MoyaViewModel.swift in Sources */,
 				B3F6E4622A6655A700E0844A /* SceneCoordinatorType.swift in Sources */,
 				B38EFBA12A8212B700812875 /* UserTableViewCell.swift in Sources */,
 				B3F6E43A2A64D16000E0844A /* BindingRxCocoaViewController.swift in Sources */,
@@ -945,14 +978,6 @@
 				kind = branch;
 			};
 		};
-		B30FBCAC2A32BDAD004A3495 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		B30FBCAF2A32BDB9004A3495 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sunshinejr/Moya-ModelMapper.git";
@@ -975,6 +1000,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.0.0;
+			};
+		};
+		B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 		B3F142302A2709DD00D2FB72 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
@@ -1011,11 +1044,6 @@
 			package = B30FBC952A32B525004A3495 /* XCRemoteSwiftPackageReference "RxOptional" */;
 			productName = RxOptional;
 		};
-		B30FBCAD2A32BDAD004A3495 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B30FBCAC2A32BDAD004A3495 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
 		B30FBCB02A32BDB9004A3495 /* Moya-ModelMapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B30FBCAF2A32BDB9004A3495 /* XCRemoteSwiftPackageReference "Moya-ModelMapper" */;
@@ -1030,6 +1058,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B36948142A3FEC2400DB1BAB /* XCRemoteSwiftPackageReference "RxDataSources" */;
 			productName = RxDataSources;
+		};
+		B38EFBAD2A83723E00812875 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		B38EFBAF2A83723E00812875 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		B38EFBB12A83723E00812875 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		B38EFBB32A83723E00812875 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B38EFBAC2A83723E00812875 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 		B3F142312A2709DD00D2FB72 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
