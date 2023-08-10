@@ -24,6 +24,8 @@ class MoyaViewController: UIViewController {
         
         viewModel.fetchAllUser()
         
+        viewModel.loginUser()
+        
     }
 
 }

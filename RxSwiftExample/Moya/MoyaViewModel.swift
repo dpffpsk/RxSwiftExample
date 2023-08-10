@@ -45,9 +45,28 @@ class MoyaViewModel {
             switch event {
             case let .success(response):
                 do {
-                    print(response.request?.url)
-                    let filterResponse = try response.filterSuccessfulStatusCodes()
+//                    print(response.request?.url)
+//                    let filterResponse = try response.filterSuccessfulStatusCodes()
                     
+                    print(try response.mapJSON())
+                } catch let error {
+                    print(error.localizedDescription)
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        }.disposed(by: disposeBag)
+    }
+    
+    func loginUser() {
+        service.rx.request(.login(email: "eve.holt@reqres.in", password: "cityslicka")).subscribe { [weak self] event in
+            switch event {
+            case let .success(response):
+                do {
+//                    print(response.request?.url)
+//                    let filterResponse = try response.filterSuccessfulStatusCodes()
+                
+                    print(try response.mapJSON())
                 } catch let error {
                     print(error.localizedDescription)
                 }

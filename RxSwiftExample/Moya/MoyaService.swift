@@ -9,11 +9,12 @@ import Foundation
 import Moya
 
 enum MoyaService: TargetType {
-    case getUser(userId: String)
-    case getAllUser(page: String)
     
     // Server base URL 지정
     var baseURL: URL { return URL(string: "https://reqres.in")! }
+    case getUser(userId: String)
+    case getAllUser(page: String)
+    case login(email: String, password: String)
     
     // API Path 지정
     var path: String {
@@ -22,6 +23,8 @@ enum MoyaService: TargetType {
             return "/api/users/\(id)"
         case .getAllUser(_):
             return "/api/users"
+        case .login(_,_):
+            return "/api/login"
         }
     }
     
@@ -30,6 +33,8 @@ enum MoyaService: TargetType {
         switch self {
         case .getUser, .getAllUser:
             return .get
+        case .login:
+            return .post
         }
     }
     
@@ -40,13 +45,15 @@ enum MoyaService: TargetType {
             return .requestPlain
         case .getAllUser(let page):
             return .requestParameters(parameters: ["page": page], encoding: URLEncoding.default)
+        case .login(let email, let password):
+            return .requestParameters(parameters: ["email": email, "password": password], encoding: JSONEncoding.default)
         }
     }
     
     // HTTP headers 적용
     var headers: [String : String]? {
         switch self {
-        case .getUser, .getAllUser:
+        case .getUser, .getAllUser, .login:
             return ["Accept" : "application/json",
                     "Content-type" : "application/json"]
         }
@@ -54,7 +61,7 @@ enum MoyaService: TargetType {
     
     var sampleData: Data {
         switch self {
-        case .getUser:
+        case .getUser, .getAllUser, .login:
             return "should be filled properly".utf8Encoded
         }
     }
